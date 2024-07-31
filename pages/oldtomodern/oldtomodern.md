@@ -28,3 +28,27 @@ The old packs includes WBCS, EyeIIP, Splesh4, Spl3sh.
 The OTM Pack is a larger .zip, and it is recommended. [Download OTM Pack.](https://archive.org/download/otm-files/otm_pack-v24.zip)
 
 Or, you just wanna only get the OFK pack, and it is 200+ MB. [Download OFK.](https://archive.org/download/otm-files/otm_for_kde-v24.zip)
+# How to turn it into the ISO image?
+Well, it is pretty easy when you are trying to use the OTM Pack on your Linux VM, instead of using shared folders.
+
+Change your directory to this:
+
+```
+cd ~/Downloads
+```
+
+Extract the OTM Pack using Ark, Archive Manager or etc.
+
+Make the ISO:
+
+```
+genisoimage -o otm_pack.iso otm_pack-v*/
+```
+
+Verify the ISO:
+
+```
+ls | grep otm_pack.iso
+```
+
+You are complete! You can now import the OTM Pack on your VM.
