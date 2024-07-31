@@ -26,4 +26,5 @@ The old packs includes WBCS, EyeIIP, Splesh4, Spl3sh.
 **Spl3sh** (pronounced sp-l-three-sh) is an old splash screen pack for KDE 3, included in the **OTM Pack**.
 # Downloads
 The OTM Pack is a larger .zip, and it is recommended. [Download OTM Pack.](https://archive.org/download/otm-files/otm_pack-v24.zip)
+
 Or, you just wanna only get the OFK pack, and it is 200+ MB. [Download OFK.](https://archive.org/download/otm-files/otm_for_kde-v24.zip)
