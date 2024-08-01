@@ -45,6 +45,8 @@ Make the ISO:
 genisoimage -o otm_pack.iso otm_pack-v*/
 ```
 
+If you don't have `genisoimage`, install **genisoimage** on your distro, or **cdrkit** on your Arch or Arch-based distro.
+
 Verify the ISO:
 
 ```
