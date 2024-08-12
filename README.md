@@ -11,3 +11,9 @@ The pack is called **OTM Pack** (or **OldTOModern Pack**), it is 600+ MB, it is 
 **OldTimesLinux** is the opposite of OldTOModern, which replaces modern themes with old themes.
 
 **OldTimesLinux** page can be found [here](https://techy-project.github.io/pages/oldtimeslinux/oldtimeslinux).
+
+# InnovArch
+**InnovArch** is a Arch-based live distro.
+
+**InnovArch** page can be found [here](https://techy-project.github.io/pages/innovarch/innovarch).
+
