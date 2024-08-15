@@ -6,14 +6,19 @@ The **bmXos** name also have different names like, **beamX11os**, **beamXos**, *
 # Releases
 These are the **bmXos** releases.
 ## Official Releases
-| Version | Not Actual Release Date | Linux Mint Version | End Of Life (EOL) |
-|---------|-------------------------|--------------------|-------------------|
-| 2.12.8  | November 18, 2016       | Linux Mint 18      | January 12, 2020  |
-| 2.11.5  | May 12, 2014            | Linux Mint 12      | March 19, 2017    |
-| 2.11.4  | May 12, 2013            | Linux Mint 12      | December 19, 2016 |
+**2.11.4** is released on May 12, 2013, based on Linux Mint 12 and ended on December 19, 2016 after 1 month on the latest release **2.12.8**.
+- A next version of **2.11.4** is **2.11.5**, which released on May 12, 2014, and ended on March 19, 2017. It is released after 1 year of the **2.11.4** release. It is based on the same version of Linux Mint as the previous version.
+
+**2.12.8** is released on November 18, 2016, based on Linux Mint 18 and ended on January 12, 2020.
+On May 12, 2022, the version got fully discontinued.
+After 4 years and 4 months (May 12, 2024) of discontinuation, the distro is now discontinued and no longer maintained.
+
 ## Alpha Release
 The **bmXos 2.10.2 Alpha** release is an alpha release, which is released on December 12, 2012 and based on Linux Mint 12.
 Discontinued after the official **bmXos 2.11.4** release, and also never released on the public.
 ## Never Released
 The **bmXos 2.9.1 Pre-Alpha** release is a never released pre-alpha, released on November 9, 2010 and based on Linux Mint 9.
 Discontinued after the **2.10.2** alpha release.
+
+# Downloads
+No downloads.
