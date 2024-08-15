@@ -9,4 +9,4 @@ These are the releases for the **DebX** distro. For example, when it's the next 
 ## DebX Essential
 **DebX Essential** (a.k.a. **2.0**, codenamed **Ninja**) is the upcoming release of **DebX** and it's being released on February 12, 2025.
 # Downloads
-No downloads. Check back later!
+No downloads. Check back soon!
