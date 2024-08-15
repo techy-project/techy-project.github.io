@@ -12,4 +12,7 @@ The pack is called **OTM Pack** (or **OldTOModern Pack**), it is 600+ MB, it is 
 
 **OldTimesLinux** page can be found [here](https://techy-project.github.io/pages/oldtimeslinux/oldtimeslinux).
 # Linux Distros
-No distros yet by Techy Project.
+## DebX
+**DebX** is an Debian-based Linux distro, which is minimal.
+
+**DebX** page can be found [here](https://techy-project.github.io/distros/debx/debx).
