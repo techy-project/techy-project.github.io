@@ -12,7 +12,4 @@ The pack is called **OTM Pack** (or **OldTOModern Pack**), it is 600+ MB, it is 
 
 **OldTimesLinux** page can be found [here](https://techy-project.github.io/pages/oldtimeslinux/oldtimeslinux).
 # Linux Distros
-## bmXos
-**bmXos** (**b**ea**m** **X**11 **o**perating **s**ystem for short) is a Linux distro based on Linux Mint.
-
-**bmXos** page can be found [here](https://techy-project.github.io/pages/bmxos/bmxos).
+No distros yet by Techy Project.
