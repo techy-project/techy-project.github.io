@@ -26,12 +26,18 @@ The old packs includes WBCS, EyeIIP, Splesh4, Spl3sh.
 **Spl3sh** (pronounced sp-l-three-sh) is an old splash screen pack for KDE 3, included in the **OTM Pack**.
 ## OTM Lite Pack
 **OTM Lite Pack** is a light version of the **OTM Pack**. It has no OFK, and old packs. Less wallpapers, icons, cursors and KDE Plasma splash screens.
+## OTM SuprLite
+**OTM SuprLite** (a.k.a. **OTM SuprLite Pack** or **OTM SuperLitePk**) is the lightest version of the **OTM Pack**. Same as the **OTM Lite Pack**, but it has no Splesh.
 
 # Downloads
 ## v24
 [OTM Pack v24 (608 MB)](https://archive.org/download/otm-files/otm_pack-v24.zip)
 
 [OldTOModern For KDE v24 (266 MB)](https://archive.org/download/otm-files/otm_for_kde-v24.zip)
+
+[OTM Lite Pack v24 (85 MB)](https://archive.org/download/otm-files/otm_lite_pack-v24.zip)
+
+[OTM SuprLite v24 (12 MB)](https://archive.org/download/otm-files/otm_suprlite_pack-v24.zip)
 # How to turn it into the ISO image?
 Well, it is pretty easy when you are trying to use the OTM Pack on your Linux VM, instead of using shared folders.
 
