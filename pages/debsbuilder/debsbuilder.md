@@ -3,8 +3,8 @@
 
 **DebSBuilder** is only for Debian and Debian-based systems. The script is root-only.
 # Releases
-## 2
-**DebSBuilder 2** is the first release of the **DebSBuilder** system builder. **DebSBuilder 2** allows you to make your own system based on Debian 12.
+## 2 Bookworm
+**DebSBuilder 2 Bookworm** is the release of the **DebSBuilder** system builder. **DebSBuilder 2 Bookworm** allows you to make your own system based on Debian 12 (Bookworm).
 # Downloads
-## 2
+## 2 Bookworm
 No downloads yet. Please be here soon!
