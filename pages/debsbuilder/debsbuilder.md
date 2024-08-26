@@ -11,10 +11,18 @@
 # Tool requirements
 These are the tools that are required for DebSBuilder, but the script will automatically install these tools.
 - update-initramfs (from live-tools) - For updating the initamfs.
-- genisoimage (from cdrkit) - For creating the ISO.
+- xorriso - For creating the ISO.
 - mksquashfs (from squashfs-tools) - For generating the SquashFS.
-- debootstrap - For installing the base system. 
+- debootstrap - For installing the base system.
+
+# ZipOut
+
+**DebSBuilder ZipOut** (called **debsbuilder_zipout** as a shell script, a.k.a. **DSBZIPOUT** or **debS.ISOzip**) is a script for making a Zip archive including your ISO files. Make sure you have the results directory with the **iso_files/** directory.
+
+# Required directories
+## isofiles/
+**isofiles/** is a directory that includes the ISO files. It is originally from a Debian live ISO, but modified. **isofiles/live/** is empty, but however, it is recommended to keep this directory for initrd, vmllinuz and SquashFS files. 
 
 # Downloads
 ## 2 Bookworm
-[DebSBuilder 2 Bookworm (313 MB)](https://archive.org/download/debsbuilder/DebSBuilder-2-Bookworm.zip)
+[DebSBuilder 2 Bookworm (313 MB)](https://archive.org/download/debsbuilder/2%20Bookworm/DebSBuilder-2-Bookworm.zip)
