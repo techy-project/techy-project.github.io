@@ -23,6 +23,18 @@ These are the tools that are required for DebSBuilder, but the script will autom
 ## isofiles/
 **isofiles/** is a directory that includes the ISO files. It is originally from a Debian live ISO, but modified. **isofiles/live/** is empty, but however, it is recommended to keep this directory for initrd, vmllinuz and SquashFS files. 
 
+# Derivatives
+## Exactement Builder
+**Exactement Builder** (a.k.a. **Quite Builder** in English) is the upcoming **DebSBuillder** derivative for Ubuntu. **Exactement Builder** is a continuation of the DistroShare Ubuntu Imager builder, since their latest version is from 2015.  
+### Releases
+#### 22J
+**Exactement Builder 22J** (a.k.a. **22Jammy**, **JammyJ** or **22.04J**) is the upcoming release of the **Exactement Builder** system builder for Ubuntu 22.04 (Jammy Jellyfish)
+#### 24N
+**Exactement Builder 24N** (a.k.a. **24Noble** or **24.04N**) is the upcoming release of the **Exactement Builder** system builder for Ubuntu 24.04 (Noble Numbat).
+### Notes
+Note that snapd is not recommended on the builder. If you want to remove snapd, please [read that here](https://www.simplified.guide/ubuntu/remove-snapd).
+If you want to install Firefox as a .deb package instead of using snaps, please [read that here](https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04).
+
 # Downloads
 ## 2 Bookworm
 [DebSBuilder 2 Bookworm (313 MB)](https://archive.org/download/debsbuilder/2%20Bookworm/DebSBuilder-2-Bookworm.zip)
