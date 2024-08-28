@@ -34,7 +34,10 @@ These are the tools that are required for DebSBuilder, but the script will autom
 ### Notes
 Note that snapd is not recommended on the builder. If you want to remove snapd, please [read that here](https://www.simplified.guide/ubuntu/remove-snapd).
 If you want to install Firefox as a .deb package instead of using snaps, please [read that here](https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04).
+## Casysb
+**Casysb** (standed as **Custom Arch System Builder**, a.k.a. **ArchSysB**) is the upcoming **DebSBuilder** derivative for Arch Linux.
 
 # Downloads
-## 2 Bookworm
+## Official (Debian)
+### 2 Bookworm
 [DebSBuilder 2 Bookworm (313 MB)](https://archive.org/download/debsbuilder/2%20Bookworm/DebSBuilder-2-Bookworm.zip)
