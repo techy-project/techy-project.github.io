@@ -36,6 +36,9 @@ Note that snapd is not recommended on the builder. If you want to remove snapd, 
 If you want to install Firefox as a .deb package instead of using snaps, please [read that here](https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04).
 ## Casysb
 **Casysb** (standed as **Custom Arch System Builder**, a.k.a. **ArchSysB**) is the upcoming **DebSBuilder** derivative for Arch Linux.
+### Releases
+#### 1.2.4.0-beta1
+**Casysb 1.2.4.0-beta1** (a.k.a. **1.2.4.0 Beta 1**) is the first beta release for the **Casysb** builder.
 
 # Downloads
 ## Official (Debian)
