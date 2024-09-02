@@ -34,13 +34,10 @@ These are the tools that are required for DebSBuilder, but the script will autom
 ### Notes
 Note that snapd is not recommended on the builder. If you want to remove snapd, please [read that here](https://www.simplified.guide/ubuntu/remove-snapd).
 If you want to install Firefox as a .deb package instead of using snaps, please [read that here](https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04).
-## Casysb
-**Casysb** (standed as **Custom Arch System Builder**, a.k.a. **ArchSysB**) is the upcoming **DebSBuilder** derivative for Arch Linux.
-### Releases
-#### 1.2.4.0-beta1
-**Casysb 1.2.4.0-beta1** (a.k.a. **1.2.4.0 Beta 1**) is the first beta release for the **Casysb** builder.
-### Casysb ManuaLive
-**Casysb ManuaLive** is a Live CD distribution based on Arch Linux. It helps people to build their system manually, instead of using an automated script.
+## Casysb ManuaLive 
+**Casysb ManuaLive** (a.k.a. **ManuaLive** or **SysBldToManual Live** is a Live CD distribution based on Arch Linux. It helps people to build their Arch-based system manually, instead of using an automated script.
+
+To read the manual guide, please go [here](https://techy-project.github.io/debsbuilder/manualive-manualguide).
 
 # Downloads
 ## Official (Debian)
