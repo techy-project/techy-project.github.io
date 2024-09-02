@@ -39,6 +39,8 @@ If you want to install Firefox as a .deb package instead of using snaps, please 
 ### Releases
 #### 1.2.4.0-beta1
 **Casysb 1.2.4.0-beta1** (a.k.a. **1.2.4.0 Beta 1**) is the first beta release for the **Casysb** builder.
+### Casysb ManuaLive
+**Casysb ManuaLive** is a Live CD distribution based on Arch Linux. It helps people to build their system manually, instead of using an automated script.
 
 # Downloads
 ## Official (Debian)
