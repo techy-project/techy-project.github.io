@@ -14,7 +14,26 @@ station wlanx connect "<wi-fi-name>"
 - Replace x (wlanx) with your number, for example, 0 (wlan0).
 
 Type your network's password (or you don't have it).
-To exit, type:
+To exit the iwd shell, type:
 ```
 exit
+```
+## Mount your hard disk
+To mount it, make sure:
+- You have the latest Arch Linux.
+- It is bigger than 4 gigabytes.
+
+Make the directory for mounting:
+```
+mkdir -p /mnt/archsys
+```
+Mount the hard disk on the directory:
+```
+mount /dev/sdax /mnt/archsys
+```
+- Replace sdax with your root partition. Enter `lsblk` to see the list of the disks and partitions.
+
+Now, if you need to configure, then chroot it:
+```
+arch-chroot /mnt/archsys
 ```
