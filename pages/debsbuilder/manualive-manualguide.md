@@ -21,7 +21,6 @@ exit
 ## Mount your hard disk
 To mount it, make sure:
 - You have the latest Arch Linux.
-- It is bigger than 4 gigabytes.
 
 Make the directory for mounting:
 ```
