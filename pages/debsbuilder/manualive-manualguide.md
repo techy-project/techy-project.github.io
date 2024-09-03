@@ -32,7 +32,23 @@ mount /dev/sdax /mnt/archsys
 ```
 - Replace sdax with your root partition. Enter `lsblk` to see the list of the disks and partitions.
 
-Now, if you need to configure, then chroot it:
+Now, chroot it:
 ```
 arch-chroot /mnt/archsys
 ```
+## Hard disk environment
+To update the initcpio, run this:
+```
+mkinitcpio -p linux
+```
+If you want to name your distro, open `/usr/lib/os-release` with your text-based text editor (nano, vim, etc.).
+
+Run this if you're done:
+```
+cp /usr/lib/os-release /etc/os-release
+```
+Then exit it:
+```
+exit
+```
+## Download the modified ISO image
