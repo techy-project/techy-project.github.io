@@ -47,4 +47,14 @@ Then exit it:
 ```
 exit
 ```
-## Download the modified ISO files
+## Download the ISO files
+To download the ISO files, use `bareimgf`. `bareimgf` stands for **Bare** **Im**a**g**e **F**iles.
+For UEFI:
+```
+bareimgf --efi
+```
+For BIOS:
+```
+bareimgf --bios
+```
+The UEFI ISO files are 1.3 megabytes, and on the BIOS, it's 1.1 megabytes.
