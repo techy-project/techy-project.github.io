@@ -41,14 +41,10 @@ To update the initcpio, run this:
 ```
 mkinitcpio -p linux
 ```
-If you want to name your distro, open `/usr/lib/os-release` with your text-based text editor (nano, vim, etc.).
+If you want to name your distro, open `/usr/lib/os-release` with your text-based text editor (nano, vim, etc.). /etc/os-release is a link to /usr/lib/os-release.
 
-Run this if you're done:
-```
-cp /usr/lib/os-release /etc/os-release
-```
 Then exit it:
 ```
 exit
 ```
-## Download the modified ISO image
+## Download the modified ISO files
