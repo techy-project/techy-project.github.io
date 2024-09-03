@@ -37,8 +37,6 @@ If you want to install Firefox as a .deb package instead of using snaps, please 
 ## Casysb ManuaLive 
 **Casysb ManuaLive** (a.k.a. **ManuaLive** or **SysBldToManual Live** is a Live CD distribution based on Arch Linux. It helps people to build their Arch-based system manually, instead of using an automated script.
 
-To read the manual guide, please go [here](https://techy-project.github.io/debsbuilder/manualive-manualguide).
-
 # Downloads
 ## Official (Debian)
 ### 2 Bookworm
