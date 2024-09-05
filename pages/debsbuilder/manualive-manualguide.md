@@ -58,3 +58,13 @@ For BIOS:
 ```
 bareimgf --bios
 ```
+## Extracting & modifying the ISO files
+### Extracting
+To make the directory before extracting, use:
+```
+mkdir -p cdfiles
+```
+To extract the ISO files, use:
+```
+unzip CDfiles-* -d cdfiles
+```
