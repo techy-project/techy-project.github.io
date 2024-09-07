@@ -68,3 +68,30 @@ To extract the ISO files, use:
 ```
 unzip CDfiles-* -d cdfiles
 ```
+### Modifying
+Before modifying, change directory:
+```
+cd cdfiles
+```
+Now, open `boot/grub/loopback.cfg` with your text editor (for example, use nano or vim.)
+
+Hold the `Backspace` key until it is empty.
+
+And add this:
+```
+default=live
+timeout=15
+timeout_style=menu
+
+menuentry "Live system (x86_64)" --class gnu-linux --class gnu --class os --id 'live' {
+	set gfxpayload=keep
+	linux	/boot/x86_64/vmlinuz quiet ---
+	initrd	/boot/x86_64/initrd.img
+}
+menuentry "Live system (x86_64, safe graphics)" --class gnu-linux --class gnu --class os --id 'livesafe' {
+	set gfxpayload=keep
+	linux	/boot/x86_64/vmlinuz nomodeset quiet ---
+	initrd	/boot/x86_64/initrd.img
+}
+```
+You can change the entry names, ID, timeout time, and add more entries.
