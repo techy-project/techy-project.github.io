@@ -90,11 +90,7 @@ Before modifying, change directory:
 ```
 cd cdfiles
 ```
-Now, open `boot/grub/loopback.cfg` with your text editor (for example, use nano or vim.)
-
-Hold the `Backspace` key until it is empty.
-
-And add this:
+Overwrite `boot/grub/loopback.cfg` with this:
 ```
 menuentry "Live system (x86_64)" --class gnu-linux --class gnu --class os --id 'live' {
 	set gfxpayload=keep
@@ -108,3 +104,9 @@ menuentry "Live system (x86_64, safe graphics)" --class gnu-linux --class gnu --
 }
 ```
 You can change the entry names, ID, timeout time, and add more entries.
+
+Copy your GRUB configuration:
+```
+cp /mnt/sys/boot/grub/grub.cfg boot/grub
+```
+If your configuration is located at the other directory, it is still recommended to generate your GRUB configuration at `/boot/grub`.
