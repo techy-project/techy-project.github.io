@@ -33,7 +33,7 @@ exit
 ```
 ### Mount your hard disk
 To mount it, make sure:
-- You have the latest Arch Linux.
+- You have the latest distribution.
 
 Make the directory for mounting:
 ```
