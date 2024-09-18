@@ -93,6 +93,7 @@ To extract the ISO files, use:
 unzip CDfiles-* -d cdfiles
 ```
 #### Modifying
+##### GRUB files
 Before modifying, change directory:
 ```
 cd cdfiles
@@ -117,3 +118,15 @@ Copy your GRUB configuration:
 cp /mnt/sys/boot/grub/grub.cfg boot/grub
 ```
 If your configuration is located at the other directory, it is still recommended to generate your GRUB configuration at `/boot/grub`.
+
+Copy your whole GRUB files:
+```
+cp /mnt/sys/boot/grub/ boot/grub -R
+```
+###### Remaking the EFI (UEFI only)
+Oops! The EFI files are only used for systemd-boot and not for GRUB. They are unused.
+
+Remove the unused EFI files:
+```
+rm EFI/BOOT/*
+```
