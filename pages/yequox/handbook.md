@@ -1,6 +1,8 @@
 # The Yequox Handbook
 The Yequox Handbook is the handbook that helps users to build their Linux distribution manually. It is included as a desktop shortcut on the Fedora-based Yequox live distribution.
 
+![Official logo for the Handbook](https://github.com/user-attachments/assets/fa87296a-549e-4fb6-a388-fd6f2ad8b522)
+
 Yequox BEF has steps before building the distro.
 
 Yequox AFT has steps after building the distro.
