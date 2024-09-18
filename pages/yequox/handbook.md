@@ -45,6 +45,13 @@ mount /dev/sdax /mnt/sys
 ```
 - Replace sdax with your root partition. Enter `lsblk` to see the list of the disks and partitions.
 
+Before chrooting, please do these:
+```
+mount -t proc /proc /mnt/sys/proc
+mount -t sysfs /sys /mnt/sys/sys
+mount --rbind /dev /mnt/sys/dev
+mount --rbind /run /mnt/sys/run
+```
 Now, chroot it:
 ```
 chroot /mnt/sys /bin/bash
