@@ -1,8 +1,6 @@
 # The Yequox Handbook
 The Yequox Handbook is the handbook that helps users to build their Linux distribution manually. It is included as a desktop shortcut on the Fedora-based Yequox live distribution.
 
-![Official logo for the Handbook](https://github.com/user-attachments/assets/fa87296a-549e-4fb6-a388-fd6f2ad8b522)
-
 Yequox BEF has steps before building the distro.
 
 Yequox AFT has steps after building the distro.
@@ -156,4 +154,35 @@ grub-mkimage -o EFI/BOOT/bootia32.efi -c boot/grub/grub.cfg -p boot/grub -O i386
 To see formats available, type:
 ```
 ls /usr/lib/grub
+```
+##### Create and remove unused things
+To remove unused things, use:
+```
+rm -rf arch/
+rm boot/*.uuid
+```
+To create a new directory for SquashFS and most images, use:
+```
+mkdir live
+```
+###### Copying initramfs and vmlinuz
+Copy these files to live/:
+```
+cp /mnt/sys/boot/initrd.img live/initrd.img
+cp /mnt/sys/boot/vmlinuz live/vmlinuz
+```
+If those files are named differently, replace them.
+##### Create a distribution version
+You need a distribution version, to create it, use:
+```
+echo version > version
+```
+Replace the first "version" with your distribution version. For example:
+```
+echo 24.0 > version
+```
+###### Make a md5sum (optional)
+To make the distribution version verified with md5sum, use:
+```
+md5sum version > version.md5sum
 ```
