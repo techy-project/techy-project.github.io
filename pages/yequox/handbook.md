@@ -44,7 +44,7 @@ Mount the hard disk on the directory:
 mount /dev/sdax /mnt/sys
 ```
 - Replace sdax with your root partition. Enter `lsblk` to see the list of the disks and partitions.
-
+#### Chrooting
 Before chrooting, please do these:
 ```
 mount -t proc /proc /mnt/sys/proc
@@ -71,6 +71,7 @@ Then exit it:
 exit
 ```
 ### Download the ISO files
+#### On Yequox live medium
 To download the ISO files, use `bareimgf`. `bareimgf` stands for **Bare** **Im**a**g**e **F**etcher.
 
 For UEFI:
@@ -80,6 +81,17 @@ bareimgf --efi
 For BIOS:
 ```
 bareimgf --bios
+```
+#### On other live medium
+Yequox only has bareimgf. While on other live medium, use `wget`.
+
+For UEFI:
+```
+wget https://archive.org/download/cdfiles/CDfiles-uefi.zip
+```
+For BIOS:
+```
+wget https://archive.org/download/cdfiles/CDfiles-bios.zip
 ```
 ## Yequox AFT (Part 2)
 ### Extracting & modifying the ISO files
@@ -93,11 +105,12 @@ To extract the ISO files, use:
 unzip CDfiles-* -d cdfiles
 ```
 #### Modifying
-##### GRUB files
 Before modifying, change directory:
 ```
 cd cdfiles
 ```
+##### GRUB files
+###### Overwrite and copy
 Overwrite `boot/grub/loopback.cfg` with this:
 ```
 menuentry "Live system (x86_64)" --class gnu-linux --class gnu --class os --id 'live' {
