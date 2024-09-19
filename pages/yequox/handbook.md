@@ -160,10 +160,6 @@ To see formats available, type:
 ```
 ls /usr/lib/grub
 ```
-If you want to copy the i386-efi format, use:
-```
-cp /usr/lib/grub/i386-efi boot/grub -R
-```
 ##### Create and remove unused things
 Oh no! There are unused things! So we originally used to be ManuaLive and based on Arch, but we switched to Fedora and chose Yequox.
 To remove unused things, use:
