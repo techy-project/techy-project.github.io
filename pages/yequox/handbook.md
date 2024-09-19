@@ -1,5 +1,5 @@
 # The Yequox Handbook
-The Yequox Handbook is the handbook that helps users to build their Linux distribution manually. It is included as a desktop shortcut on the Fedora-based Yequox live distribution.
+The Yequox Handbook is the handbook that helps users to build their Linux distribution manually. It is included as a desktop shortcut on the Ubuntu-based Yequox live distribution.
 
 Yequox BEF has steps before building the distro.
 
@@ -220,10 +220,10 @@ Make sure you don't have unnecessary files and directories.
 ##### Add more files
 If you want to add more files, here:
 
-###### GRUB formats
+###### GRUB formats (other live medium only)
 If you want to add more GRUB formats, here are the formats:
 i386-pc and i386-efi if you want to make it bootable for BIOS and bootable for x86 UEFI.
-###### i386 GRUB formats
+###### i386 GRUB formats (other live medium only)
 To copy i386-efi, run:
 ```
 cp /usr/lib/grub/i386-efi boot/grub -R
