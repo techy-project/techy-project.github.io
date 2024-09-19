@@ -207,3 +207,12 @@ To simply reboot:
 reboot
 ```
 ### Make the ISO
+We are here now! So, act as a root user:
+```
+sudo su
+```
+Move the SquashFS:
+```
+mv /filesystem.squashfs /isofiles/live
+```
+And make the ISO:
