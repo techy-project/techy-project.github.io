@@ -136,6 +136,11 @@ Copy your whole GRUB files:
 ```
 cp /mnt/sys/boot/grub/ boot/grub -R
 ```
+Fedora uses a different name like /boot/grub2, so, you need to replace them.
+For Fedora systems:
+```
+cp /mnt/sys/boot/grub2 boot/grub -R
+```
 ###### Remaking the EFI (UEFI only)
 Oops! The EFI files are only used for systemd-boot and not for GRUB. They are unused.
 
@@ -155,7 +160,12 @@ To see formats available, type:
 ```
 ls /usr/lib/grub
 ```
+If you want to copy the i386-efi format, use:
+```
+cp /usr/lib/grub/i386-efi boot/grub -R
+```
 ##### Create and remove unused things
+Oh no! There are unused things! So we originally used to be ManuaLive and based on Arch, but we switched to Fedora and chose Yequox.
 To remove unused things, use:
 ```
 rm -rf arch/
@@ -180,6 +190,25 @@ echo version > version
 Replace the first "version" with your distribution version. For example:
 ```
 echo 24.0 > version
+```
+###### Make the name (optional)
+To make a name for your distro, try thinking about your name of your distribution.
+
+To make it:
+```
+echo name > name.distro
+```
+For our name of the distribution "Yequox":
+```
+echo Yequox > name.distro
+```
+If your distribution name has spaces, try:
+```
+echo "name of the distribution" > name.distro
+```
+For example:
+```
+echo "Yequox Linux" > name.distro
 ```
 ###### Make a md5sum (optional)
 To make the distribution version verified with md5sum, use:
