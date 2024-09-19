@@ -161,7 +161,7 @@ To see formats available, type:
 ls /usr/lib/grub
 ```
 ##### Create and remove unused things
-Oh no! There are unused things! So we originally used to be ManuaLive and based on Arch, but we switched to Fedora and chose Yequox.
+Oh no! There are unused things! So we originally used to be ManuaLive and based on Arch, but we switched to Ubuntu and chose Yequox.
 To remove unused things, use:
 ```
 rm -rf arch/
@@ -220,10 +220,10 @@ Make sure you don't have unnecessary files and directories.
 ##### Add more files
 If you want to add more files, here:
 
-###### GRUB formats (other live medium only)
+###### GRUB formats
 If you want to add more GRUB formats, here are the formats:
 i386-pc and i386-efi if you want to make it bootable for BIOS and bootable for x86 UEFI.
-###### i386 GRUB formats (other live medium only)
+###### i386 GRUB formats
 To copy i386-efi, run:
 ```
 cp /usr/lib/grub/i386-efi boot/grub -R
