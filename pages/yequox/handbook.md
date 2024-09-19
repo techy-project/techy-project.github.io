@@ -243,5 +243,18 @@ openSUSE systems:
 zypper install genisoimage
 ```
 ### Testing the ISO
-Now you're done! If you wanna test it on a VM, here:
-#### qemu-system-x86_64
+If you wanna test it on a VM, here:
+#### Text-based
+##### qemu-system-x86_64
+To test it on QEMU, run:
+```
+qemu-system-x86_64 -boot d -cdrom iso-name.iso -m 1024
+```
+Replace iso-name.iso with your actual ISO.
+#### Graphical
+##### Virtual Machine Manager
+Virtual Machine Manager is using QEMU. So, if you wanna test here, add your virtual machine here.
+##### Others
+Do the same thing as Virtual Machine Manager.
+### Done!
+Now your ISO is done and ready to go!
