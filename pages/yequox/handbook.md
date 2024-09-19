@@ -186,3 +186,24 @@ To make the distribution version verified with md5sum, use:
 ```
 md5sum version > version.md5sum
 ```
+##### Make a SquashFS image
+We need a SquashFS image. To make it, you need to run:
+```
+mksquashfs /mnt/sys /mnt/sys/filesystem.squashfs
+```
+Make sure you don't have unnecessary files and directories.
+##### Copy ISO files
+We need to copy ISO files to your root directory.
+
+Run:
+```
+mkdir /mnt/sys/isofiles
+cp ~/cdfiles/* /mnt/sys/isofiles -R
+```
+###### Reboot
+We need to reboot to the hard disk to make a ISO.
+To simply reboot:
+```
+reboot
+```
+### Make the ISO
