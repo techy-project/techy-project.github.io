@@ -221,6 +221,29 @@ We need a SquashFS image. To make it, you need to run:
 mksquashfs /mnt/sys /mnt/sys/filesystem.squashfs
 ```
 Make sure you don't have unnecessary files and directories.
+##### Add more files
+If you want to add more files, here:
+
+###### GRUB formats
+If you want to add more GRUB formats, here are the formats:
+i386-pc and i386-efi if you want to make it bootable for BIOS and bootable for x86 UEFI.
+###### i386 GRUB formats
+To copy i386-efi, run:
+```
+cp /usr/lib/grub/i386-efi boot/grub -R
+```
+To copy i386-pc, run:
+```
+cp /usr/lib/grub/i386-pc boot/grub -R
+```
+Remove the previously generated GRUB config file:
+```
+rm boot/grub/grub.cfg
+```
+Regenerate it:
+```
+grub-mkconfig -o boot/grub/grub.cfg
+```
 ##### Copy ISO files
 We need to copy ISO files to your root directory.
 
