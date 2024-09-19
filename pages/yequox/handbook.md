@@ -216,3 +216,32 @@ Move the SquashFS:
 mv /filesystem.squashfs /isofiles/live
 ```
 And make the ISO:
+```
+genisoimage -r -V "ISO-LABEL" -cache-inodes -J -l \
+  -b /isofiles/boot/syslinux/isolinux.bin -no-emul-boot \
+  -boot-load-size 4 -boot-info-table -o iso-name.iso /isofiles
+```
+- Replace "ISO-LABEL" with your label. As shown here, the written USB should be the name of "Yequox Linux" as an example.
+- Replace iso-name.iso with your ISO name.
+
+If you don't have `genisoimage`, use these to install it:
+
+Debian/Ubuntu systems:
+```
+apt install genisoimage
+```
+Fedora/Red Hat systems:
+```
+dnf install genisoimage
+```
+Arch systems:
+```
+pacman -S cdrkit
+```
+openSUSE systems:
+```
+zypper install genisoimage
+```
+### Testing the ISO
+Now you're done! If you wanna test it on a VM, here:
+#### qemu-system-x86_64
