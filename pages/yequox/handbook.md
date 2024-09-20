@@ -73,6 +73,7 @@ exit
 ```
 ### Download the ISO files
 #### On Yequox live medium
+##### bareimgf
 To download the ISO files, use `bareimgf`. `bareimgf` stands for **Bare** **Im**a**g**e **F**etcher.
 
 For UEFI:
@@ -84,6 +85,7 @@ For BIOS:
 bareimgf --bios
 ```
 #### On other live medium
+##### wget
 Yequox only has bareimgf. While on other live medium, use `wget`.
 
 For UEFI:
@@ -93,6 +95,17 @@ wget https://archive.org/download/cdfiles/CDfiles-uefi.zip
 For BIOS:
 ```
 wget https://archive.org/download/cdfiles/CDfiles-bios.zip
+```
+##### curl
+While the other distribution don't use wget, you can use `curl`.
+
+For UEFI:
+```
+curl https://archive.org/download/cdfiles/CDfiles-uefi.zip
+```
+For BIOS:
+```
+curl https://archive.org/download/cdfiles/CDfiles-bios.zip
 ```
 ## Yequox AFT (Part 2)
 ### Extracting & modifying the ISO files
@@ -241,6 +254,17 @@ Regenerate it:
 ```
 grub-mkconfig -o boot/grub/grub.cfg
 ```
+###### Make more (optional)
+To make more files:
+
+
+To make a file with random numbers:
+```
+touch numb
+echo $RANDOM > numb
+```
+You can make more files.
+
 ##### Copy ISO files
 We need to copy ISO files to your root directory.
 
