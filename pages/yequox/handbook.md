@@ -45,6 +45,7 @@ Mount the hard disk on the directory:
 mount /dev/sdax /mnt/sys
 ```
 - Replace sdax with your root partition. Enter `lsblk` to see the list of the disks and partitions.
+
 #### Chrooting
 Before chrooting, please do these:
 ```
@@ -164,11 +165,37 @@ rm EFI/BOOT/*
 ```
 Remake with x86_64-efi:
 ```
-grub-mkimage -o EFI/BOOT/bootx64.efi -c boot/grub/grub.cfg -p boot/grub -O x86_64-efi efi_gop efi_uga efinet all_video video video_bochs video_cirrus video_fb videoinfo serial terminfo terminal search search_fs_file search_fs_uuid search_label udf iso9660 ext2 fat exfat ntfs hfsplus part_gpt part_msdos msdospart lvm diskfilter parttool probe normal acpi ohci uhci ahci ehci cat ls lsefimmap lsefisystab lsmmap lspci lsacpi lssal linux
+grub-mkimage \
+	-o EFI/BOOT/bootx64.efi \
+	-c boot/grub/grub.cfg \
+	-p boot/grub \
+	-O x86_64-efi \
+	efi_gop efi_uga efinet \
+	all_video video video_bochs video_cirrus video_fb videoinfo \
+	serial terminfo terminal \
+	search search_fs_file search_fs_uuid search_label \
+	udf iso9660 ext2 fat exfat ntfs hfsplus \
+	part_gpt part_msdos msdospart lvm diskfilter parttool probe \
+	normal acpi ohci uhci ahci ehci cat \
+	ls lsefimmap lsefisystab lsmmap lspci lsacpi lssal \
+	linux
 ```
 Remake with i386-efi:
 ```
-grub-mkimage -o EFI/BOOT/bootia32.efi -c boot/grub/grub.cfg -p boot/grub -O i386-efi efi_gop efi_uga efinet all_video video video_bochs video_cirrus video_fb videoinfo serial terminfo terminal search search_fs_file search_fs_uuid search_label udf iso9660 ext2 fat exfat ntfs hfsplus part_gpt part_msdos msdospart lvm diskfilter parttool probe normal acpi ohci uhci ahci ehci cat ls lsefimmap lsefisystab lsmmap lspci lsacpi lssal linux
+grub-mkimage \
+	-o EFI/BOOT/bootia32.efi \
+	-c boot/grub/grub.cfg \
+	-p boot/grub \
+	-O i386-efi \
+	efi_gop efi_uga efinet \
+	all_video video video_bochs video_cirrus video_fb videoinfo \
+	serial terminfo terminal \
+	search search_fs_file search_fs_uuid search_label \
+	udf iso9660 ext2 fat exfat ntfs hfsplus \
+	part_gpt part_msdos msdospart lvm diskfilter parttool probe \
+	normal acpi ohci uhci ahci ehci cat \
+	ls lsefimmap lsefisystab lsmmap lspci lsacpi lssal \
+	linux
 ```
 To see formats available, type:
 ```
