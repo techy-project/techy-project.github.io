@@ -2,10 +2,10 @@
 The Yequox Handbook is the handbook that helps users to build their Linux distribution manually. It is included as a desktop shortcut on the Ubuntu-based Yequox live distribution.
 
 
-Yequox BEF has steps before building the distro.
+Yequox B.E.S. (Before Environment Setup) has steps before building the distro. (Enter root, connecting, mounting, chrooting, downloading the base ISO files.)
 
-Yequox AFT has steps after building the distro.
-## Yequox BEF (Part 1)
+Yequox A.E.S. (After Environment Setup) has steps after building the distro. (Extracting & modifying the ISO files.)
+## Yequox B.E.S. (Part 1)
 ### Root
 Enter the root user environment:
 ```
@@ -108,7 +108,7 @@ For BIOS:
 ```
 curl https://archive.org/download/cdfiles/CDfiles-bios.zip
 ```
-## Yequox AFT (Part 2)
+## Yequox A.E.S. (Part 2)
 ### Extracting & modifying the ISO files
 #### Extracting
 To make the directory before extracting, use:
