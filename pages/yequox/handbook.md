@@ -67,7 +67,39 @@ If you have dracut, run:
 ```
 dracut
 ```
-
+#### Remove snapd (Ubuntu only)
+Snaps are the controversial thing on Ubuntu. To remove, list all the packages:
+```
+snap list
+```
+Then remove the packages:
+```
+snap remove <package>
+```
+Replace <package> with your package. After removing them all, purge snapd:
+```
+apt purge snapd
+```
+##### Prevent from reinstalling (Ubuntu only)
+We have snapd uninstalled. To prevent it from reinstalling, use:
+```
+touch /etc/apt/preferences.d/nosnap.pref
+```
+Use a text editor to edit it. For example:
+```
+nano /etc/apt/preferences.d/nosnap.pref
+```
+Add:
+```
+Package: snapd
+Pin: release a=*
+Pin-Priority: -10
+```
+Then update make sure it is correct:
+```
+apt update
+```
+#### Exiting
 Then exit it:
 ```
 exit
