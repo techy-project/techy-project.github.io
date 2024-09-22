@@ -9,13 +9,13 @@ Yequox A.E.S. (After Environment Setup) has steps after building the distro. (Ex
 ### Root
 Enter the root user environment:
 ```
-sudo su
+sudo -i
 ```
 ### Connect to the Wi-Fi network
 Before that, connect to your Wi-Fi network.
 #### NetworkManager (recommended)
 Click on the network icon on the bottom panel and search for your Wi-Fi network.
-#### iwctl
+#### iwctl (recommended for OpenYequox)
 To enter, you must type:
 ```
 iwctl
@@ -118,7 +118,7 @@ For BIOS:
 bareimgf --bios
 ```
 #### On other live medium
-##### wget
+##### wget (recommended for OpenYequox and other distributions)
 Yequox only has bareimgf. While on other live medium, use `wget`.
 
 For UEFI:
@@ -181,7 +181,7 @@ If your configuration is located at the other directory, it is still recommended
 
 Copy your whole GRUB files:
 ```
-cp /mnt/sys/boot/grub/ boot/grub -R
+cp /mnt/sys/boot/grub/* boot/grub -R
 ```
 Fedora uses a different name like /boot/grub2, so, you need to replace them.
 For Fedora systems:
@@ -285,7 +285,12 @@ To make the distribution version verified with md5sum, use:
 md5sum version > version.md5sum
 ```
 ##### Make a SquashFS image
-We need a SquashFS image. To make it, you need to run:
+We need a SquashFS image. Make sure to run these:
+```
+umount /mnt/sys/proc
+umount /mnt/sys/sys
+```
+To make it, you need to run:
 ```
 mksquashfs /mnt/sys /mnt/sys/filesystem.squashfs
 ```
