@@ -1,3 +1,5 @@
+> Note: The Internet Archive got hacked and the services are offline. Our downloads are from Internet Archive, when you decide to click them, it leads to their "Temporary Offline" page. If you registered on the Internet Archive, please go to HIBP to check if your account is on data breach and change your password. Removes when Internet Archive is currently online.
+
 Welcome to the Techy Project's website! We show you some cool stuff you would like!
 # Products
 ## OldTOModern
