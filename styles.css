@@ -105,3 +105,10 @@ footer {
     margin-bottom: 0.5rem;
 }
 
+/* Center the SourceForge logo */
+.center-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
