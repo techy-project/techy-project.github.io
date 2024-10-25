@@ -107,8 +107,10 @@ footer {
 
 /* Center the SourceForge logo */
 .center-logo {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin-top: 20px;
+}
+.center-logo img {
+    display: inline-block;
 }
 
