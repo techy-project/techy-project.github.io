@@ -98,17 +98,10 @@ footer {
     margin-top: 2rem;
 }
 
-/* Center the FanISO text */
+/* Center heading 3 from #projects */
 #projects h3 {
     text-align: center;
     font-size: 1.75rem;
     margin-bottom: 0.5rem;
 }
 
-/* Flexbox to center the SourceForge logo */
-.center-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
