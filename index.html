@@ -3,45 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Techy Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="https://techy-project.github.io">Techy Project</a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <div class="logo">Techy Project</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
 
-    <section class="hero">
+    <section id="home">
         <h1>Welcome to Techy Project</h1>
-        <p>Innovating the Future of Technology Projects</p>
+        <p>Exploring the world of technology, one project at a time.</p>
+        <button class="cta-button" id="get-started-btn">Get Started</button>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-list">
+            <a href="projects/cheesebox/index.html" class="project-link">Cheesebox</a>
+        </div>
     </section>
 
     <section id="about">
         <h2>About Us</h2>
-        <p>Techy Project is focused on developing cutting-edge technology and innovative projects.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Current Project</h2>
-        <h3>Old2Mod (O2M)</h3>
-        <p>Our current project, Old2Mod, is an archive that includes a collection of new and modern themes. You can use these themes on your old Linux/BSD computer with an older desktop environment to give it a fresh, updated look.</p>
-        <p>
-            <a href="https://codeberg.org/techy-project/Old2Mod" target="_blank">Check out the Old2Mod source code on Codeberg.</a>
-        </p>
+        <p>We are passionate about technology and innovation.</p>
     </section>
 
     <footer>
         <p>&copy; 2024 Techy Project. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 

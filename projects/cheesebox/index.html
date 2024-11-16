@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheesebox - Techy Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Techy Project</div>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Cheesebox</h1>
+        <p>A simple Distrobox wrapper made in C++</p>
+        <div class="buttons">
+            <a href="https://github.com/techy-project/Cheesebox" class="cta-button" target="_blank">View on GitHub</a>
+            <a href="#about" class="cta-button secondary">Learn More</a>
+        </div>
+        <div class="tech-stack">
+            <span class="tag">C++</span>
+            <span class="tag">CMake</span>
+            <span class="tag">Linux</span>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Cheesebox</h2>
+        <div class="about-content">
+            <p>Cheesebox is a lightweight Distrobox container manager written in C++. It provides a simple and efficient way to manage Linux containers through Distrobox.</p>
+            
+            <h3>Key Features</h3>
+            <ul>
+                <li>Lightweight (under 100KB)</li>
+                <li>Simple command-line interface</li>
+                <li>Fast C++ implementation</li>
+                <li>Easy container management</li>
+            </ul>
+
+            <h3>Installation</h3>
+            <p>Make sure you are on the Cheesebox source code, have installed CMake and Distrobox (Not for building, that's what Cheesebox is a wrapper for).</p>
+            <p>To install Cheesebox, make the build directory, change the directory to it, build it and install it on the PATH directory (/usr/bin):</p>
+            <div class="code-block">
+                <pre><code>mkdir build && cd build
+cmake ..
+make
+sudo install cheesebox /usr/bin</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Techy Project. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
